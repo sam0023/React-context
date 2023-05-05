@@ -9,11 +9,11 @@ import "./App.css";
 const App = () => {
   const [count, setCount] = useState(1);
   const onIncrement = () => {
-    setCount(count + 1);
+    setCount((prev) => prev + 1);
   };
 
   const onDecrement = () => {
-    setCount(count - 1);
+    setCount((prev) => prev - 1);
   };
 
   return (
